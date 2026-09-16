@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ENK Restaurant | Cunto Macaan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                ENK<span>.</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Bogga Hore</a></li>
+                <li><a href="#about">Nagu Saabsan</a></li>
+                <li><a href="#menu">Cuntada</a></li>
+                <li><a href="#reviews">Faallooyinka</a></li>
+                <li><a href="#contact">Nala Soo Xiriir</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+
+                <button class="theme-btn" id="themeBtn">
+                    🌙
+                </button>
+
+                <button class="cart-btn" id="cartBtn">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                KU SOO DHAWOOW ENK RESTAURANT
+            </p>
+
+            <h1>
+                Cunto Macaan.
+                <span>Xusuuso Qurux Badan.</span>
+            </h1>
+
+            <p>
+                Ku raaxayso cunto cusub, macaan iyo tayo sare leh
+                oo si gaar ah adiga loogu diyaariyey.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary-btn">
+                    Eeg Cuntada
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Nala Soo Xiriir
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about section" id="about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80"
+                alt="Cuntada ENK Restaurant"
+            >
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-small">
+                NAGU SAABSAN
+            </p>
+
+            <h2>
+                Waxaan Cuntada Ku Sameynaa
+                <span>Jacayl</span>
+            </h2>
+
+            <p>
+                ENK Restaurant waa maqaaxi casri ah oo diiradda
+                saarta cunto macaan, adeeg wanaagsan iyo meel
+                raaxo leh oo lagu cunteeyo.
+            </p>
+
+            <p>
+                Ujeeddadeennu waa mid fudud: inaan bixino cunto
+                cusub, aan macaamiisheena farxad gelino oo aan
+                abuurno xusuuso aan la ilaawi karin.
+            </p>
+
+            <div class="about-info">
+
+                <div>
+                    <strong>10+</strong>
+                    <span>Nooc Cunto</span>
+                </div>
+
+                <div>
+                    <strong>5K+</strong>
+                    <span>Macaamiil</span>
+                </div>
+
+                <div>
+                    <strong>4.9</strong>
+                    <span>Qiimeyn</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SPECIAL OFFER ================= -->
+
+    <section class="offer">
+
+        <div>
+
+            <p>DALAB GAAR AH</p>
+
+            <h2>
+                Hel 20% DHIMIS Dalabkaaga Koowaad
+            </h2>
+
+            <span>
+                Isticmaal koodhka:
+                <strong>ENK20</strong>
+            </span>
+
+        </div>
+
+        <a href="#menu" class="btn primary-btn">
+            Hadda Dalbo
+        </a>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu section" id="menu">
+
+        <div class="section-title">
+
+            <p class="section-small">
+                CUNTADA
+            </p>
+
+            <h2>
+                Cuntooyinka <span>Caanka ah</span>
+            </h2>
+
+            <p>
+                Dooro cuntada aad jeceshahay kuna dar gaadhigaaga.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="menu-tools">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Raadi cunto..."
+            >
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+
+        <div class="categories">
+
+            <button class="category-btn active" data-category="all">
+                Dhammaan
+            </button>
+
+            <button class="category-btn" data-category="burger">
+                Burger
+            </button>
+
+            <button class="category-btn" data-category="pizza">
+                Pizza
+            </button>
+
+            <button class="category-btn" data-category="chicken">
+                Digaag
+            </button>
+
+            <button class="category-btn" data-category="drink">
+                Cabitaan
+            </button>
+
+        </div>
+
+
+        <!-- FOOD CARDS -->
+
+        <div class="food-grid" id="foodGrid">
+
+
+            <!-- CUNTO 1 -->
+
+            <div
+                class="food-card"
+                data-category="burger"
+                data-name="Classic Burger"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+                        alt="Classic Burger"
+                    >
+
+                    <span class="food-badge">
+                        Caansan
+                    </span>
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Classic Burger</h3>
+
+                    <p>
+                        Hilib lo'aad, farmaajo, saladh, yaanyo
+                        iyo suugo gaar ah.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$8.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Classic Burger"
+                            data-price="8.99"
+                        >
+                            Ku Dar +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUNTO 2 -->
+
+            <div
+                class="food-card"
+                data-category="pizza"
+                data-name="Cheese Pizza"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+                        alt="Cheese Pizza"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Cheese Pizza</h3>
+
+                    <p>
+                        Farmaajo cusub, suugo yaanyo iyo xawaash.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$10.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Cheese Pizza"
+                            data-price="10.99"
+                        >
+                            Ku Dar +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUNTO 3 -->
+
+            <div
+                class="food-card"
+                data-category="chicken"
+                data-name="Fried Chicken"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80"
+                        alt="Digaag Shiilan"
+                    >
+
+                    <span class="food-badge">
+                        Ugu Iibka Badan
+                    </span>
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Digaag Shiilan</h3>
+
+                    <p>
+                        Digaag si fiican loo shiilay oo lagu daray
+                        baradho shiilan.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$9.50</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Fried Chicken"
+                            data-price="9.50"
+                        >
+                            Ku Dar +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUNTO 4 -->
+
+            <div
+                class="food-card"
+                data-category="burger"
+                data-name="Double Burger"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
+                        alt="Double Burger"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Double Burger</h3>
+
+                    <p>
+                        Laba xabbo hilib lo'aad ah, farmaajo
+                        iyo suugo gaar ah.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$12.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Double Burger"
+                            data-price="12.99"
+                        >
+                            Ku Dar +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUNTO 5 -->
+
+            <div
+                class="food-card"
+                data-category="pizza"
+                data-name="Chicken Pizza"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                        alt="Chicken Pizza"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Chicken Pizza</h3>
+
+                    <p>
+                        Digaag, farmaajo, khudaar iyo suugo yaanyo.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$13.50</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Chicken Pizza"
+                            data-price="13.50"
+                        >
+                            Ku Dar +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUNTO 6 -->
+
+            <div
+                class="food-card"
+                data-category="drink"
+                data-name="Fresh Juice"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80"
+                        alt="Casiir Cusub"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Casiir Cusub</h3>
+
+                    <p>
+                        Casiir miro cusub oo caafimaad leh.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$4.50</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Fresh Juice"
+                            data-price="4.50"
+                        >
+                            Ku Dar +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="reviews section" id="reviews">
+
+        <div class="section-title">
+
+            <p class="section-small">
+                FAAALLOOYINKA MACAAMIISHA
+            </p>
+
+            <h2>
+                Waxa Dadku <span>Leeyihiin</span>
+            </h2>
+
+        </div>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Cuntadu aad bay u macaanayd, adeeguna wuxuu ahaa
+                    mid aad u wanaagsan. Mar kale ayaan dalban doonaa!"
+                </p>
+
+                <h3>Ahmed</h3>
+
+                <span>Macaamiil</span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Maqaaxi aad u wanaagsan. Burger-ku wuxuu ahaa
+                    mid cusub oo aad u macaan."
+                </p>
+
+                <h3>Maryan</h3>
+
+                <span>Macaamiil</span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Cunto wanaagsan, website qurux badan iyo adeeg degdeg ah."
+                </p>
+
+                <h3>Mohamed</h3>
+
+                <span>Macaamiil</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact section" id="contact">
+
+        <div class="contact-info">
+
+            <p class="section-small">
+                NALA SOO XIRIIR
+            </p>
+
+            <h2>
+                Aan <span>Wada Hadalno</span>
+            </h2>
+
+            <p>
+                Haddii aad su'aal qabto ama aad rabto inaad dalab samayso,
+                nala soo xiriir.
+            </p>
+
+            <div class="contact-item">
+                📍 Muqdisho, Soomaaliya
+            </div>
+
+            <div class="contact-item">
+                📞 +252 61 619943620
+            </div>
+
+            <div class="contact-item">
+                📧 info@enkrestaurant.com
+            </div>
+
+            <div class="contact-item">
+                🕐 Furan: 8:00 Subaxnimo - 11:00 Habeenimo
+            </div>
+
+            <a
+                class="whatsapp-btn"
+                href="https://wa.me/25261619943620"
+                target="_blank"
+            >
+                💬 WhatsApp-ka Ka Dalbo
+            </a>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Magacaaga"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email-kaaga"
+                required
+            >
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Mawduuca"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Fariintaada"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn primary-btn">
+                Dir Fariinta
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+                    ENK<span>.</span>
+                </div>
+
+                <p>
+                    Cunto macaan. Xusuuso qurux badan.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Links Muhiim ah</h3>
+
+                <a href="#home">Bogga Hore</a>
+                <a href="#about">Nagu Saabsan</a>
+                <a href="#menu">Cuntada</a>
+                <a href="#contact">Nala Soo Xiriir</a>
+
+            </div>
+
+            <div>
+
+                <h3>Nala Soco</h3>
+
+                <div class="socials">
+
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 ENK Restaurant. Dhammaan Xuquuqdu Way Xafidan Tahay.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART MODAL ================= -->
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart-box">
+
+            <button class="close-cart" id="closeCart">
+                ×
+            </button>
+
+            <h2>
+                Gaadhigaaga 🛒
+            </h2>
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Gaadhigaagu waa madhan yahay.
+                </p>
+
+            </div>
+
+            <div class="cart-total">
+
+                <span>Wadarta:</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Xaqiiji Dalabka
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
